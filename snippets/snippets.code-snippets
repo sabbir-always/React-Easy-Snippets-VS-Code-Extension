@@ -122,5 +122,41 @@
             "{ state.length > 0 && data.map((item, index) => (<div key={index}>{item.name}</div>)) }"
         ],
         "description": "Inline conditional map render in React"
+    },
+    "React TS Form State with Submit": {
+        "prefix": "handle-submit-typescript",
+        "body": [
+            "const [name, setName] = useState<string>('');",
+            "const [age, setAge] = useState<number>(0);",
+            "",
+            "// handleSubmit define with TypeScript",
+            "const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {",
+            "  e.preventDefault();",
+            "",
+            "};"
+        ],
+        "description": "React TypeScript form state with handleSubmit"
+    },
+    "React TypeScript Page Component": {
+        "prefix": "rafce-typescript",
+        "body": [
+            "import React from 'react';",
+            "",
+            "const ${TM_FILENAME_BASE}: React.FC = () => {",
+            "  return (",
+            "    <div>${TM_FILENAME_BASE}</div>",
+            "  );",
+            "};",
+            "",
+            "export default ${TM_FILENAME_BASE};"
+        ],
+        "description": "React TypeScript page component with dynamic file name"
+    },
+    "React useEffect": {
+        "prefix": "use-effect",
+        "body": [
+            "useEffect(() => {}, ['']);"
+        ],
+        "description": "React useEffect hook"
     }
 }
